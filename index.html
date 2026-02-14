@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}}</title>
+    <title>产品展示页面</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -24,12 +24,49 @@
             color: #2563eb;
             margin-bottom: 20px;
         }
+        .product-links {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+        .product-links h2 {
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+        .product-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .product-links li {
+            margin: 10px 0;
+        }
+        .product-links a {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        .product-links a:hover {
+            background: #2563eb;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>{{TITLE}}</h1>
-        <p>{{CONTENT}}</p>
+        <h1>产品展示页面</h1>
+        <p>欢迎访问我们的产品展示页面！以下是我们的主要服务和项目：</p>
+        
+        <div class="product-links">
+            <h2>📚 教育咨询服务</h2>
+            <ul>
+                <li><a href="usa-college-consulting.html">美国大学申请咨询</a></li>
+                <li><a href="nyu-stern-entrepreneurship.html">NYU Stern 创业项目</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美国本科留学咨询 - 专业规划服务</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,107,107,0.4);
+        }
+        
+        .services {
+            background: white;
+            padding: 60px 20px;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #667eea;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .service-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .pricing {
+            background: white;
+            padding: 60px 20px;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .price-card {
+            background: #f8f9fa;
+            padding: 40px 20px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-card.popular {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .popular-tag {
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 20px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .price-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .price-card.popular .price {
+            color: #ffd700;
+        }
+        
+        .features {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .features li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .price-card.popular .features li {
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .contact {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+        
+        .contact-form {
+            max-width: 500px;
+            margin: 30px auto;
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255,255,255,0.9);
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .price-card.popular {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">美本留学咨询</div>
+                <nav>
+                    <a href="#services" class="btn">服务详情</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>开启你的美国名校之旅</h1>
+            <p>专业的美国本科留学咨询服务，助你圆梦常春藤盟校和顶尖大学</p>
+            <a href="#pricing" class="btn">查看价格方案</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">我们的服务</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>学术规划</h3>
+                    <p>个性化课程选择指导，AP/IB课程规划，GPA提升策略</p>
+                </div>
+                <div class="service-card">
+                    <h3>标化考试</h3>
+                    <p>SAT/ACT备考策略，托福/雅思提分方案，考试时间规划</p>
+                </div>
+                <div class="service-card">
+                    <h3>申请指导</h3>
+                    <p>选校策略制定，文书写作指导，推荐信准备，面试培训</p>
+                </div>
+                <div class="service-card">
+                    <h3>背景提升</h3>
+                    <p>科研项目推荐，竞赛指导，实习机会，志愿者活动规划</p>
+                </div>
+                <div class="service-card">
+                    <h3>签证服务</h3>
+                    <p>签证材料准备，面签培训，行前指导，住宿安排</p>
+                </div>
+                <div class="service-card">
+                    <h3>后续支持</h3>
+                    <p>入学适应指导，选课建议，职业规划，校友网络对接</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">价格方案</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>基础套餐</h3>
+                    <div class="price">$8,800</div>
+                    <ul class="features">
+                        <li>选校清单制定（8所）</li>
+                        <li>主文书修改（3轮）</li>
+                        <li>补充文书指导（5篇）</li>
+                        <li>面试培训（2次）</li>
+                        <li>申请材料审核</li>
+                        <li>3个月咨询服务</li>
+                    </ul>
+                    <a href="#contact" class="btn">立即咨询</a>
+                </div>
+                
+                <div class="price-card popular">
+                    <div class="popular-tag">最热门</div>
+                    <h3>标准套餐</h3>
+                    <div class="price">$15,800</div>
+                    <ul class="features">
+                        <li>个性化选校策略（12所）</li>
+                        <li>主文书全程指导（5轮）</li>
+                        <li>补充文书全覆盖（8篇）</li>
+                        <li>模拟面试（4次）</li>
+                        <li>背景提升规划</li>
+                        <li>6个月全程服务</li>
+                        <li>签证指导</li>
+                        <li>行前准备</li>
+                    </ul>
+                    <a href="#contact" class="btn">立即咨询</a>
+                </div>
+                
+                <div class="price-card">
+                    <h3>尊享套餐</h3>
+                    <div class="price">$25,800</div>
+                    <ul class="features">
+                        <li>顶级名校专项申请</li>
+                        <li>不限量文书修改</li>
+                        <li>1对1背景提升项目</li>
+                        <li>常春藤导师匹配</li>
+                        <li>全年VIP服务</li>
+                        <li>家庭沟通会议</li>
+                        <li>入学后持续支持</li>
+                        <li>校友资源对接</li>
+                    </ul>
+                    <a href="#contact" class="btn">立即咨询</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            <p>立即预约免费咨询，了解如何为您的孩子制定最佳留学方案</p>
+            <div class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="姓名" required>
+                </div>
+                <div class="form">
+                    <input type="email" placeholder="邮箱" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="电话" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="您的问题或需求" rows="4"></textarea>
+                </div>
+                <button class="btn">提交咨询</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 美本留学咨询. 专业成就梦想.</p>
+        </div>
+    </footer>
+</body>
+</html>

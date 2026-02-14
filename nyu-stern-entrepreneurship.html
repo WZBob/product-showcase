@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纽约大学Stern商学院 - 创业管理学专业</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1e3c72;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,107,107,0.4);
+        }
+        
+        .section {
+            background: white;
+            padding: 60px 20px;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #1e3c72;
+        }
+        
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .program-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .program-card h3 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .requirements {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .requirements h3 {
+            color: #1e3c72;
+            margin: 20px 0 10px;
+            font-size: 1.3rem;
+        }
+        
+        .course-list {
+            list-style: none;
+            margin: 15px 0;
+        }
+        
+        .course-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .notes {
+            background: #e8f4f8;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .notes h4 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">NYU Stern 商学院</div>
+                <nav>
+                    <a href="#programs" class="btn">本科项目</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>创业管理学专业</h1>
+            <p>在数字化技术重塑工作格局的时代，创业思维和技能将成为成功职业生涯的必备要素。纽约大学Stern商学院为您提供成为创业家、风险投资家或创新政策影响者所需的视角和人脉网络。</p>
+        </div>
+    </section>
+
+    <section id="programs" class="section">
+        <div class="container">
+            <h2 class="section-title">本科项目选择</h2>
+            <div class="program-grid">
+                <div class="program-card">
+                    <h3>商业学士 (BS in Business)</h3>
+                    <p>旗舰项目，提供13个商业专业方向，包含创业管理作为辅修专业。STEM认证学位，拥有44个选修学分，可在NYU全校范围内探索兴趣。</p>
+                </div>
+                
+                <div class="program-card">
+                    <h3>商业与政治经济学士 (BS in Business and Political Economy)</h3>
+                    <p>独特的全球视角课程，研究市场、政府和政策如何塑造全球经济结果。STEM认证项目，需要两个学期的海外学习。</p>
+                </div>
+                
+                <div class="program-card">
+                    <h3>商业、科技与创业学士 (Anand Khubani BS in Business, Technology and Entrepreneurship)</h3>
+                    <p>专注于科技与创业的独特STEM认证课程，包含沉浸式课程，为商业科技、咨询、银行或自主创业职业做好准备。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">创业管理辅修专业要求</h2>
+            <div class="requirements">
+                <h3>必修课程：</h3>
+                <p>• 创业学 (MGMT-UB 85) - 原名为"创业模式" (3学分)</p>
+                
+                <h3>选修课程 (需完成9学分)：</h3>
+                <ul class="course-list">
+                    <li>商业计划构建 (ACCT-UB 65)</li>
+                    <li>社会创业 (BSPA-UB 41)</li>
+                    <li>社会创业与可持续发展-哥斯达黎加 (BSPA-UB 45)</li>
+                    <li>可持续蛋白质领域的创业 (BSPA-UB 50/ANST-UA 650)</li>
+                    <li>影响力营销：可持续商业策略 (BSPA-UB 51)</li>
+                    <li>社会创新实践 (BSPA-UB 70)</li>
+                    <li>市场设计 (ECON-UB 226)</li>
+                    <li>创业金融专题 (FINC-UB 61)</li>
+                    <li>创业金融应用：金融科技 (FINC-UB 62)</li>
+                    <li>科技行业驱动因素 (INTA-GB 6057)</li>
+                    <li>工作场所人员与团队管理 (MGMT-UB 7)</li>
+                    <li>家族企业与私营企业管理 (MGMT-UB 28)</li>
+                    <li>谈判与共识建立 (MGMT-UB 30)</li>
+                    <li>纽约市创业实验室 (MGMT-UB 43)</li>
+                    <li>以色列创新与创业 (MGMT-UB 9087) - 在NYU特拉维夫校区授课</li>
+                    <li>品牌战略与规划 (MKTG-UB 55)</li>
+                    <li>创业启动平台 (MULT-UB 39) - 原名为"创业2.0"</li>
+                    <li>金融科技基础 (MULT-UB 80)</li>
+                    <li>法律与实践中的创业 (MULT-UB 86)</li>
+                    <li>体验式学习研讨会：时尚产业创意与商业 (MULT-UB 104)</li>
+                    <li>创业实验室 (MULT-TB 301) - 原名为"精益创业：从构想到发布"</li>
+                    <li>房地产开发与创业 (OPMG-UB 60)</li>
+                    <li>编程与数据科学导论 (TECH-UB 23)</li>
+                    <li>网络、人群与市场 (TECH-UB 60)</li>
+                    <li>数字创新与众包 (TECH-UB 70)</li>
+                </ul>
+            </div>
+            
+            <div class="notes">
+                <h4>重要说明：</h4>
+                <p>• Stern商学院的选修课程只能满足一个专业要求。例如，《创业模式》可以作为创业专业的学分要求，也可以作为高级管理选修课，但不能同时满足两个要求。</p>
+                <p>• 要查找"-GB"级别的课程（如INTA-GB 6057），请确保在Albert课程搜索左侧的"本科生"筛选器关闭，然后在"多学科MULT-UB"下搜索。</p>
+                <p>• Stern商学院大三、大四学生可以通过填写MBA课程申请表申请修读MBA(-GB)课程。如有关于研究生课程如何满足专业要求的问题，请咨询您的Stern学术顾问。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">支持服务</h2>
+            <div class="program-grid">
+                <div class="program-card">
+                    <h3>同伴导师</h3>
+                    <p>与在各热门行业拥有丰富知识和经验的大三、大四学生交流。</p>
+                </div>
+                
+                <div class="program-card">
+                    <h3>教师顾问</h3>
+                    <p>深入了解相关课程以及该领域的学术或职业发展路径。</p>
+                </div>
+                
+                <div class="program-card">
+                    <h3>学术顾问</h3>
+                    <p>规划您的专业和学位课程安排。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 纽约大学Stern商学院. 信息来源于官方网站.</p>
+        </div>
+    </footer>
+</body>
+</html>
